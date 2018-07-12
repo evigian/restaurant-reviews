@@ -6,23 +6,21 @@ var markers = []
 
 //register service worker
 if ('serviceWorker' in navigator) { 
-  navigator.serviceWorker
-  .register('./serviceworker.js')
-  .then(registration => {
-        console.log('Service worker registration succeeded:');
-        if (registration.waiting) {
-            console.log('Service worker registration is waiting');
-        }
-        if (registration.active) {
-            console.log('Service worker registration is active');
-        }
-        console.log('Registration succeeded. Scope is ' + registration.scope);
-      }).catch((error) => {
-        console.log('Registration failed with ' + error);
-    });
-  } else {
-    console.log('Service workers are not supported.');
-  }
+	navigator.serviceWorker
+		.register('./serviceworker.js')
+		.then(registration => {
+			console.log('Service worker registration succeeded:');
+
+			if (registration.active) {
+				console.log('Service worker registration is active');
+			}
+			console.log('Registration succeeded. Scope is ' + registration.scope);
+		}).catch((error) => {
+			console.log('Registration failed with ' + error);
+		});
+} else {
+	console.log('Service workers are not supported.');
+}
 
 
 /**
