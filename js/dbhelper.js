@@ -8,7 +8,7 @@ class DBHelper {
    * Change this to restaurants.json file location on your server.
    */
   static get DATABASE_URL() {
-    return `./data/restaurants.json`;
+    return `https://evigian.github.io/restaurant-reviews/data/restaurants.json`;
   }
 
   /**
@@ -149,7 +149,7 @@ class DBHelper {
    * Restaurant image URL.
    */
   static imageUrlForRestaurant(restaurant) {
-    return (`./img/${restaurant.photograph}`);
+    return (`https://evigian.github.io/restaurant-reviews/img/${restaurant.photograph}`);
   }
 
   /**
