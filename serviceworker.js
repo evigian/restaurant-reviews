@@ -18,6 +18,7 @@ const urlsToCache = [
   './img/8.jpg',
   './img/9.jpg',
   './img/10.jpg',
+  './img/food.png',
   'restaurant.html?id=1',
   'restaurant.html?id=2',
   'restaurant.html?id=3',
