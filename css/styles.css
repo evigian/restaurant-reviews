@@ -343,6 +343,39 @@ nav h1 a {
   } 
 
   /* Media Queries */
+
+  
+  @media screen and (max-width: 1469px) {
+    #restaurants-list {
+      justify-content: center;
+    }
+    #restaurants-list li {
+      width: 45%;
+    }
+    .inside #map-container {
+      width: 100%;
+      height: 300px;
+      position: relative;
+    }
+    .inside #map {
+      background-color: #ccc;
+      height: 100%;
+      width: 100%;
+    }
+    #breadcrumb {
+      width: 100%;
+      padding: 20px;
+    }
+    #restaurant-container,
+    #reviews-container {
+      width: 100%;
+      margin: auto;
+    }
+    .inside #footer {
+      width: 100%;
+      text-align: center;
+    }
+  }
   
   @media screen and (max-width: 769px) {
     #restaurants-list {
@@ -403,37 +436,5 @@ nav h1 a {
     #breadcrumb li {
       font-size: 16px;
       font-weight: 300;
-    }
-  }
-
-    @media screen and (max-width: 1469px) {
-    #restaurants-list {
-      justify-content: center;
-    }
-    #restaurants-list li {
-      width: 45%;
-    }
-    .inside #map-container {
-      width: 100%;
-      height: 400px;
-      position: relative;
-    }
-    .inside #map {
-      background-color: #ccc;
-      height: 100%;
-      width: 100%;
-    }
-    #breadcrumb {
-      width: 100%;
-      padding: 20px;
-    }
-    #restaurant-container,
-    #reviews-container {
-      width: 100%;
-      margin: auto;
-    }
-    .inside #footer {
-      width: 100%;
-      text-align: center;
     }
   }
