@@ -19,7 +19,7 @@ In order to build this project I used Google Maps with a Google Maps API key and
 ## How to run the app
 
 You can see the live page of the project here: https://evigian.github.io/restaurant-reviews/.
-An alternative option is to run the app locally by using a simple http server. In order to run the app locally, follow the instructions that are given in the original repository of the project [here]: https://github.com/udacity/mws-restaurant-stage-1#what-do-i-do-from-here). In this case it is necessary to change the paths in the same way they exist in the starter code, as they were edited in order to work on the live page.
+An alternative option is to run the app locally by using a simple http server. In order to run the app locally, follow the instructions that are given in the original repository of the project [here](https://github.com/udacity/mws-restaurant-stage-1#what-do-i-do-from-here). In this case it is necessary to change the paths in the same way they exist in the starter code, as they were edited in order to work on the live page.
 
 ## Acknowledgements
 
