@@ -5,22 +5,11 @@ var map
 var markers = []
 
 //register service worker
-if ('serviceWorker' in navigator) { 
+if('serviceWorker' in navigator) {
 	navigator.serviceWorker
-		.register('/sw.js')
-		.then(registration => {
-			console.log('Service worker registration succeeded:');
-
-			if (registration.active) {
-				console.log('Service worker registration is active');
-			}
-			console.log('Registration succeeded. Scope is ' + registration.scope);
-		}).catch((error) => {
-			console.log('Registration failed with ' + error);
-		});
-} else {
-	console.log('Service workers are not supported.');
-}
+			 .register('/serviceworker.js')
+			 .then(function() { console.log("Service Worker Registered"); });
+  }
 
 
 /**
