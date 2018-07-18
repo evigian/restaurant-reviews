@@ -7,7 +7,7 @@ var markers = []
 //register service worker
 if ('serviceWorker' in navigator) { 
 	navigator.serviceWorker
-		.register('restaurant-reviews/sw.js')
+		.register('/sw.js')
 		.then(registration => {
 			console.log('Service worker registration succeeded:');
 
