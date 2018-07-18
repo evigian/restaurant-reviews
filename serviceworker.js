@@ -1,12 +1,5 @@
-const cacheName = 'restaurant-reviews';
-
-self.addEventListener('install', function(event) {
-  // Perform install steps
-  event.waitUntil(
-    caches.open(cacheName)
-      .then(function(cache) {
-        console.log('Opened cache');
-        return cache.addAll([
+const cacheName = 'reviews';
+const urlsToCache = [
   '/restaurant-reviews/index.html',
   '/restaurant-reviews/restaurant.html',
   '/restaurant-reviews/css/styles.css',
@@ -35,7 +28,15 @@ self.addEventListener('install', function(event) {
   '/restaurant-reviews/restaurant.html?id=8',
   '/restaurant-reviews/restaurant.html?id=9',
   '/restaurant-reviews/restaurant.html?id=10'
-]);
+];
+
+self.addEventListener('install', function(event) {
+  // Perform install steps
+  event.waitUntil(
+    caches.open(cacheName)
+      .then(function(cache) {
+        console.log('Opened cache');
+        return cache.addAll(urlsToCache);
       })
   );
 });
