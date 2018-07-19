@@ -1,5 +1,6 @@
 const cacheName = 'reviews';
 const urlsToCache = [
+  '/restaurant-reviews/',
   '/restaurant-reviews/index.html',
   '/restaurant-reviews/restaurant.html',
   '/restaurant-reviews/css/styles.css',
